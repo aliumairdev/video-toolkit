@@ -1,0 +1,33 @@
+{
+  "_comment": "Pronunciation dictionary the TTS learns from. Key = how it's shown; value = how it's SPOKEN. audit_script.py wraps spoken terms as {key|value} (slides show the key, the voice says the value) and re-syncs existing wraps when this file changes. F5 cannot spell letters (it turns 'A W S' into 'AwubuS'), so: use the FULL NAME for anything that has one, and DOTTED form (e.g. 'S.A.A.-C. zero three') only for codes with no expansion. Add a term here once and every build fixes it everywhere. Omit acronyms already said correctly as a word (RAM, JSON, YAML, ARN, NAT, CIDR, SaaS, REST).",
+  "max_sentence_words": 32,
+  "pronunciations": {
+    "Ali Umair": "Ali Omer",
+    "aliumair.dev": "ali umair dot dev",
+    "SAA-C03": "S.A.A.-C. zero three",
+    "AWS": "Amazon Web Services",
+    "EC2": "Elastic Compute Cloud",
+    "S3": "Simple Storage Service",
+    "IAM": "Identity and Access Management",
+    "VPC": "Virtual Private Cloud",
+    "RDS": "Relational Database Service",
+    "EBS": "Elastic Block Store",
+    "ELB": "Elastic Load Balancer",
+    "ECS": "Elastic Container Service",
+    "EKS": "Elastic Kubernetes Service",
+    "SNS": "Simple Notification Service",
+    "SQS": "Simple Queue Service",
+    "KMS": "Key Management Service",
+    "IT": "information technology",
+    "CPU": "central processing unit",
+    "GPU": "graphics processing unit",
+    "SDK": "software development kit",
+    "CLI": "command line interface",
+    "API": "application programming interface",
+    "URL": "web address",
+    "DNS": "domain name system",
+    "CDN": "content delivery network",
+    "VPN": "virtual private network",
+    "SQL": "sequel"
+  }
+}

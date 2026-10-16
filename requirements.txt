@@ -1,0 +1,19 @@
+# Main pipeline: clone_voice.py (narration) + build_video.py (video).
+# Python 3.11 venv (system Python 3.15 has no PyTorch wheels). Also needs ffmpeg on PATH:
+#   brew install ffmpeg
+#
+# Setup:
+#   python3.11 -m venv venv
+#   source venv/bin/activate
+#   pip install -r requirements.txt
+#
+# chatterbox-tts pins torch==2.6.0 / torchaudio==2.6.0 (arm64 wheels exist), so they are
+# installed automatically — don't add a different torch here.
+#
+# Models (~2 GB) download automatically from Hugging Face on the first `python clone_voice.py`
+# run and are cached in ~/.cache/huggingface. Optionally `export HF_TOKEN=...` for faster pulls.
+
+chatterbox-tts==0.1.7
+pillow>=10
+numpy<2            # the torch 2.6 / chatterbox stack expects numpy 1.x
+pygments>=2        # syntax colours for @code slides (optional but recommended)

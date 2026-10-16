@@ -1,0 +1,47 @@
+# === Voice recordings — never commit or upload (contain Ali's voice) ===
+my_voice.wav
+my_voice_clean.wav
+my_voice_f5.wav
+Recording*.wav
+Recording*.m4a
+*.m4a
+
+# === Caches and secrets ===
+.tts_cache/
+.f5_cache/
+.video_cache/
+.music.wav
+.env
+.envrc
+*.token
+hf_token*
+
+# === Generated outputs ===
+output/
+narration.wav
+narration_test.mp3
+*.mp3
+video.mp4
+video_*.mp4
+captions.srt
+thumbnail.jpg
+timeline.json
+previews/
+
+# === Tuning benches (generated clips of Ali's voice) ===
+voice_test/
+f5_test/
+
+# === Python / virtual envs ===
+venv/
+venv_f5/
+.venv/
+__pycache__/
+*.pyc
+
+# === Scratch / logs ===
+scratch_*
+*.log
+
+# === macOS ===
+.DS_Store
