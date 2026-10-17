@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Ali Umair — https://aliumair.dev
+# Part of video-toolkit. See LICENSE for the full GNU AGPL v3 terms.
 """Shared script parser for clone_voice.py and build_video.py.
 
 script.txt format

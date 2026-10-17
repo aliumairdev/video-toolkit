@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Ali Umair — https://aliumair.dev
+# Part of video-toolkit. See LICENSE for the full GNU AGPL v3 terms.
 """
 Voice tuning bench. Generate ONE short phrase across a grid of settings so you can
 quickly find the pacing / expressiveness / accent that best matches your real voice,

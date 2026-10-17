@@ -1,4 +1,4 @@
-# Tutorial video toolkit
+# video-toolkit
 
 Write a script → narrate it in your cloned voice → get a finished YouTube video
 (animated slides timed to your voice, background music, captions and a thumbnail).
@@ -12,7 +12,7 @@ script.txt ──► clone_voice.py ──► narration.wav + timeline.json ─�
 
 ```bash
 brew install ffmpeg
-cd ~/voiceclone                      # this folder
+cd video-toolkit                     # this folder
 python3.11 -m venv venv              # system Python 3.15 has no PyTorch wheels — use 3.11
 source venv/bin/activate
 pip install -r requirements.txt
@@ -108,3 +108,17 @@ Each slide starts with an `@` line. The text under it is spoken while that slide
 
 Fonts: Inter and JetBrains Mono (SIL Open Font License, see `fonts/`).
 Voice model: Chatterbox by Resemble AI (MIT). It adds an inaudible watermark to the generated audio.
+
+## License
+
+video-toolkit is licensed under the **GNU Affero General Public License v3.0** — see [LICENSE](LICENSE).
+© 2026 Ali Umair ([aliumair.dev](https://aliumair.dev)).
+
+In short: you're free to use, study, modify, and share it, but if you distribute a modified
+version — **including running it as a network service** — you must release your source under the
+same license. This keeps improvements open and flowing back to the project.
+
+The voice models and other third-party components are **not** covered by this license and keep
+their own terms — importantly, the F5-TTS weights carry a **non-commercial** consideration from
+their training data. Read [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) before using the
+output commercially. Contributions are welcome under AGPL-3.0 — see [CONTRIBUTING.md](CONTRIBUTING.md).

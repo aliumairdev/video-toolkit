@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Ali Umair — https://aliumair.dev
+# Part of video-toolkit. See LICENSE for the full GNU AGPL v3 terms.
 """
 Narrate script.txt in your voice with F5-TTS, writing the same outputs build_video.py expects:
   narration.wav    full narration (16-bit so it plays everywhere)
@@ -41,7 +44,7 @@ REF_TEXT = ("Hi, I'm Ali Omer and welcome to today we are going to learn how the
 SR = 24000                      # F5 (vocos-mel-24khz) output rate
 SPEED = 0.9                     # pacing: <1 slower, >1 faster. <1 gives F5 more time per line,
                                 #   which stops it rushing/garbling mid-sentence.
-NFE = 48                        # sampling steps: higher = cleaner/more stable but slower (was 32)
+NFE = 32                        # sampling steps. 32 is reliable on the M1; 48 hangs on long lines.
 PAUSE_SECONDS = 0.30            # silence between sentences
 HOLD_SECONDS = 2.5             # how long a slide with no spoken text stays up
 TRIM_DB = -40.0                 # strip each clip's own leading/trailing silence

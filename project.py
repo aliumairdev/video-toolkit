@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Ali Umair — https://aliumair.dev
+# Part of video-toolkit. See LICENSE for the full GNU AGPL v3 terms.
 """Shared: derive a project name and output folder from the script.
 
 The project name is the first `#` comment line in the script (e.g.

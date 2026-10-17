@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Ali Umair — https://aliumair.dev
+# Part of video-toolkit. See LICENSE for the full GNU AGPL v3 terms.
 """
 Step 2 - build the video from narration.wav + timeline.json (made by clone_voice.py).
 
